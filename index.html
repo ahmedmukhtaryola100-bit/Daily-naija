@@ -1,199 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Naija - Latest Nigerian News</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #222;
-        }
-
-        header {
-            background: #008751;
-            color: white;
-            padding: 18px 5%;
-        }
-
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        nav {
-            margin-top: 12px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 18px;
-            font-weight: bold;
-        }
-
-        .hero {
-            background: white;
-            padding: 40px 5%;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 36px;
-            margin-bottom: 12px;
-        }
-
-        .hero p {
-            color: #666;
-            font-size: 18px;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: 30px auto;
-        }
-
-        .section-title {
-            font-size: 26px;
-            margin-bottom: 20px;
-        }
-
-        .news-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .news-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .news-image {
-            height: 180px;
-            background: #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #777;
-        }
-
-        .news-content {
-            padding: 18px;
-        }
-
-        .category {
-            color: #008751;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        .news-content h2 {
-            margin: 8px 0;
-            font-size: 20px;
-        }
-
-        .news-content p {
-            color: #666;
-            line-height: 1.5;
-        }
-
-        footer {
-            margin-top: 50px;
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 28px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin-bottom: 8px;
-            }
-        }
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Daily Naija</title>
 </head>
-
 <body>
-
 <header>
-    <div class="logo">Daily Naija</div>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Nigeria</a>
-        <a href="#">Politics</a>
-        <a href="#">Sports</a>
-        <a href="#">Entertainment</a>
-        <a href="#">Business</a>
-        <a href="#">Technology</a>
-    </nav>
+<div class="logo">Daily Naija</div>
+<div class="nav">
+<a href="#">Home</a><a href="#">Nigeria</a><a href="#">Politics</a><a href="#">Sports</a><a href="#">Entertainment</a><a href="#">Business</a><a href="#">Technology</a>
+</div>
 </header>
 
-<section class="hero">
-    <h1>Welcome to Daily Naija</h1>
-    <p>Your source for the latest news, stories and updates from Nigeria.</p>
-</section>
+<main>
+<div class="welcome">
+<h1>Welcome to Daily Naija</h1>
+<p>Your source for the latest news from Nigeria.</p>
+</div>
 
-<main class="container">
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?w=600" style="width:100%;height:180px;object-fit:cover">
+<div class="content">
+<span>NIGERIA</span>
+<h3>Tinubu Announces New Economic Plan</h3>
+<p>Federal Government unveils new plan to boost economy.</p>
+</div>
+</div>
 
-    <h2 class="section-title">Latest News</h2>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=600" style="width:100%;height:180px;object-fit:cover">
+<div class="content">
+<span>SPORTS</span>
+<h3>Super Eagles Qualify For AFCON</h3>
+<p>Nigeria defeats opponent 3-0 in Abuja stadium.</p>
+</div>
+</div>
 
-    <div class="news-grid">
-
-        <article class="news-card">
-            <div class="news-image">News Image</div>
-
-            <div class="news-content">
-                <div class="category">NIGERIA</div>
-                <h2>Latest News From Nigeria</h2>
-                <p>Stay updated with the latest happenings across Nigeria.</p>
-            </div>
-        </article>
-
-        <article class="news-card">
-            <div class="news-image">News Image</div>
-
-            <div class="news-content">
-                <div class="category">SPORTS</div>
-                <h2>Latest Sports Updates</h2>
-                <p>Get the latest Nigerian and international sports stories.</p>
-            </div>
-        </article>
-
-        <article class="news-card">
-            <div class="news-image">News Image</div>
-
-            <div class="news-content">
-                <div class="category">ENTERTAINMENT</div>
-                <h2>Entertainment News</h2>
-                <p>Discover the latest stories from music, movies and celebrities.</p>
-            </div>
-        </article>
-
-    </div>
-
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600" style="width:100%;height:180px;object-fit:cover">
+<div class="content">
+<span>ENTERTAINMENT</span>
+<h3>Burna Boy Wins New Award</h3>
+<p>Nigerian star shines at international ceremony.</p>
+</div>
+</div>
+</div>
 </main>
-
-<footer>
-    <p>&copy; 2026 Daily Naija. All rights reserved.</p>
-</footer>
-
+<footer>© 2026 Daily Naija - All Rights Reserved</footer>
 </body>
 </html>
